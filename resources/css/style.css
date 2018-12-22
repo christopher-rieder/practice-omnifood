@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -385,6 +387,11 @@ blockquote {
   line-height: 1.5em;
   position: relative;
   margin-top: 40px;
+}
+
+blockquote::first-letter {
+  font-size: 140%;
+  font-weight: 900;
 }
 
 blockquote::before {
