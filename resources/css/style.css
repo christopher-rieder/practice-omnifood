@@ -165,6 +165,14 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 4px 0px;
+}
+
 .main-nav {
   float: right;
   list-style: none;
@@ -191,6 +199,50 @@ header {
 .main-nav li a:active {
   border-bottom: 4px solid #e67e22;
 }
+
+/* sticky nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 9999;
+  box-shadow: 0 2px 2px #e8e8e8;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 14px 0px;
+  color: #555;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
+}
+
+/* mobile nav */
+.mobile-nav-anchor {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon {
+  font-size: 200%;
+  color: #fff;
+}
+
+
 
 /* FEATURES SECTION */
 .long-copy {
@@ -470,18 +522,18 @@ cite img {
 }
 
 /* FORMS SECTION */
-#form-div {
+.form-div {
   width: 60%;
   margin-left: 20%;
   align-items: center;
 }
 
-#form-div *:nth-child(1) {
+.form-div *:nth-child(1) {
   flex: 1 0 0px;
   padding: 10px;
 }
 
-#form-div *:nth-child(2) {
+.form-div *:nth-child(2) {
   flex: 2 0 0px;
   margin: 10px;
 }
